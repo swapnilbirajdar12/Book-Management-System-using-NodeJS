@@ -1,0 +1,169 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-top: 20px;
+}
+
+#searchContainer {
+  margin: 20px auto;
+  text-align: center;
+}
+
+#searchContainer label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+#searchId {
+  padding: 8px;
+  font-size: 14px;
+}
+
+#booksTable {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  overflow-x: auto; 
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#booksTable th, #booksTable td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#booksTable th {
+  background-color: #3498db;
+  color: #fff;
+}
+
+#addBookForm {
+  width: 60%;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#addBookForm h2 {
+  color: #333;
+  text-align: center;
+}
+
+#addBookForm label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+#addBookForm input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#addBookForm button {
+  background-color: #27ae60;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+
+#addBookForm button:hover {
+  background-color: #219652;
+}
+
+#booksTable button {
+  margin-right: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+#booksTable button.edit {
+  background-color: #f39c12;
+  color: #fff;
+}
+
+#booksTable button.edit:hover {
+  background-color: #d27e0a;
+}
+
+#booksTable button.delete {
+  background-color: #e74c3c; 
+  color: #fff;
+}
+
+#booksTable button.delete:hover {
+  background-color: #c93b2b;
+}
+
+#searchContainer button {
+  background-color: #3498db; 
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+  transition: background-color 0.3s ease;
+}
+
+#searchContainer button:hover {
+  background-color: #2980b9;
+}
+
+#searchContainer button.findAll {
+  background-color: #8e44ad;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+#searchContainer button.findAll:hover {
+  background-color: #6a3492;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #addBookForm,
+  #booksTable {
+    width: 100%;
+    margin: 10px;
+  }
+}
+
+.popup {
+  position: fixed;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ff5555;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
